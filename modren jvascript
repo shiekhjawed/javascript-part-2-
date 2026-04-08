@@ -1,0 +1,53 @@
+object topic
+    <script>
+    var studentData = {
+        name: "Amber jawed",
+        class: 10,
+        age: 20,
+        gender: "female",
+        method:function(){
+            console.log(`this is a cat${name}`);
+        }
+    };
+    studentData.name = "Amber";
+    studentData.class = 9;
+    delete studentData.age;
+    console.log(studentData);
+    </script>
+    <script>
+        var array = [
+            {
+                name: "Amber",
+                class: 9,
+                age: 20,
+                
+                method:function(){
+                    console.log(`this is a dinner${name}`);
+                }
+            },
+              {
+                name: "asim",
+                class: 8,
+                age: 19,
+                method:function(){
+                    console.log(`this is a cat${name}`);
+                }
+            },
+              {
+                name: "Amber",
+                class: 9,
+                age: 18,
+                method:function(){
+                    console.log(`this is a dinner${name}`);
+                }
+            },
+        ];
+        console.log(array);
+        console.log(array[0].age);
+        console.log(array[0].method());
+        console.log(array[1].class);
+        console.log(array[1].method());
+        console.log(array[2].name);
+        console.log(array[2].method());
+
+    </script>
