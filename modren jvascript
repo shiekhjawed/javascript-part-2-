@@ -50,4 +50,66 @@ object topic
         console.log(array[2].name);
         console.log(array[2].method());
 
-    </script>
+    </script>//prototype  contsructor dynanamic parameter pass
+    <script>
+//         var plan1 = new Plane("basic"," 20$" , "200pages");
+//         var plan2 = new Plane("premium", "50$", "500pages");
+//         var plan3 = new Plane("pro", "100$", "1000pages");
+         
+// console.log(plan1, plan2, plan3);
+// console.log(plan1.calculate());
+var plane1={
+    name: "basic",
+    price: 20,
+    pages:" 200",
+    quantity: "2",
+   
+};
+var plane2={
+    name: "premium",
+    price: 50 ,
+    pages: "500",
+    quantity: "3",
+   
+};
+var plane3={
+    name: "pro",    
+    price: 100,
+    pages: "1000",
+    quantity: "5",
+}
+    function plane(name , price, pages, quantity){
+        this.name = "name";
+        this.price = price;
+        this.pages = pages;
+        this.quantity = quantity;
+        this.calculate = function(){
+            return this.price *5;
+        }
+    };
+    //dynamic object creation
+    var plan1 = new plane("basic", 20 , "200pages", 2);
+    var plan2 = new plane("premium", 50, "500pages", 3 );
+    var plan3 = new plane("pro", 100, "1000pages", 5);
+    console.log(plan1, plan2, plan3);
+    console.log(plan1.calculate());
+    console.log(plan2.calculate());
+    console.log(plan3.calculate());  
+    
+// Constructor function
+function Plan(name, price, storage, users) {
+  this.name = name;
+  this.price = price;
+  this.storage = storage;
+  this.users = users;
+}
+
+// Creating multiple objects using the constructor function and  dynamic object creation
+var plan1 = new Plan("Basic", 20, 200, 2);
+var plan2 = new Plan("Premium", 50, 500, 3);
+var plan3 = new Plan("Pro", 100, 1000, 5);
+
+// Checking the objects
+console.log(plan1);
+console.log(plan2);
+console.log(plan3);
