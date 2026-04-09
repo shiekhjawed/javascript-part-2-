@@ -113,3 +113,6 @@ var plan3 = new Plan("Pro", 100, 1000, 5);
 console.log(plan1);
 console.log(plan2);
 console.log(plan3);
+// let const topuic
+ let data ="shiekh";
+ console.log(`${data} amber jawed  is a good person`);
