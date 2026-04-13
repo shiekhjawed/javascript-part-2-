@@ -215,3 +215,29 @@ function restOperators(a,d,...num){
 }
 const arr = [1,2,4,5,7,9,0,5,3,2,5]
 restOperators(...arr)
+// Spread (...) → merge / copy data This spreads (copies) all properties of male into data.
+// Rest (...) → collect remaining values
+// // Default params → fallback values
+// const male = {
+//     age: 20,
+//     class: 16
+// }
+
+// const data = {
+//     name: "john", 
+//     ...male
+// }
+
+// console.log(data)//output {name: 'john', age: 20, class: 16}
+// const male = {
+//     age: 20
+// };
+
+// const data = {
+//     age: 25,   // 👈 first (top)
+//     ...male    // 👈 last (bottom)
+// };
+
+// console.log(data);
+// ✅ Output:
+// { age: 20 }
