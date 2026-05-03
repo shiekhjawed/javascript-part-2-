@@ -304,3 +304,10 @@ console.log(nums.some(n=>n%2===0));
 //Returns true if ALL elements match.then false if any one element does not match.
 const nums=[3,4,6];
 console.log(nums.every(n=>n%2===0));
+<script>
+   // Flatten nested arrays.
+const arr1=[1,[2,[3]]];
+console.log(arr1.flat(2));
+const arr = [1,[2,[3,[4,[5,[6,[7,[8,[9,[10]]]]]]]]]];
+console.log(arr.flat(9));
+</script>
