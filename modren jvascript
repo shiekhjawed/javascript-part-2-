@@ -311,3 +311,28 @@ console.log(arr1.flat(2));
 const arr = [1,[2,[3,[4,[5,[6,[7,[8,[9,[10]]]]]]]]]];
 console.log(arr.flat(9));
 </script>
+<script>
+ //closure agar outer function complete hojaey ya stop hojaey tab bhi inner function apni outer function ki variables ko access kar sakta hai.kyu kay cclosure un variable ko memory m save kr lay tahy hai aur jab inner function call hota hai to wo us variable ko access kar leta hai. closure ki wajah se hum private variables create kar sakte hain jo sirf inner function ke through access ho sakte hain.
+function outer() {
+    var a = 10;
+    function inner() {
+        console.log(a);
+    }
+    return inner;
+}
+  const innerFunc = outer();
+    innerFunc(); // Output: 10
+
+function outer2() {
+    let name = "shiekh";
+    function inner2() {
+        console.log(name);
+    }
+    return inner2;
+}
+  const innerFunc2 = outer2();
+    innerFunc2(); // Output: "shiekh"
+  
+
+
+</script>
