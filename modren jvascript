@@ -336,3 +336,13 @@ function outer2() {
 
 
 </script>
+<script>
+function test(firstname) {
+    console.log('hello', firstname);
+}
+function user(lastname) {
+    let name = 'shiekh';
+lastname(name);
+
+}
+user(test);
